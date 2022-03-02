@@ -8,9 +8,7 @@ import csv
 from importlib import resources
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from modules.models import Base
-from modules.models import Author
-from modules.models import Paper
+from modules.models import Base, Author, Paper, Tag1, Tag2, Tag3
 
 def get_data(filepath):
     """
@@ -43,13 +41,48 @@ def populate_database(session, data):
             .one_or_none()
         )
         if paper is None:
-            paper = Paper(title=row["title"])
+            paper = Paper(title=row["title"], year=row["year"])
             session.add(paper)
+
+        #========== tag1 ==========#
+        tag1 = (
+            session.query(Tag1)
+            .filter(Tag1.tag1 == row["tag1"])
+            .one_or_none()
+        )
+        if tag1 is None:
+            tag1 = Tag1(tag1=row["tag1"])
+            session.add(tag1)
+
+        #========== tag2 ==========#
+        tag2 = (
+            session.query(Tag2)
+            .filter(Tag2.tag2 == row["tag2"])
+            .one_or_none()
+        )
+
+        if tag2 is None:
+            tag2 = Tag2(tag2=row["tag2"])
+            session.add(tag2)
+
+        #========== tag3 ==========#
+        tag3 = (
+            session.query(Tag3)
+            .filter(Tag3.tag3 == row["tag3"])
+            .one_or_none()
+        )
+        if tag3 is None:
+            tag3 = Tag3(tag3=row["tag3"])
+            session.add(tag3)
+
 
         # add the items to the relationships
         author.papers.append(paper)
         paper.authors.append(author)
-        
+        paper.tag1s.append(tag1)
+        paper.tag2s.append(tag2)
+        paper.tag3s.append(tag3)
+
         session.commit()
 
     session.close()

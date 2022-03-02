@@ -6,22 +6,22 @@ Jacqueline,Hewitt,An improved method for 21-cm foreground removal,2009,foregroun
 Matias,Zaldarriaga,An improved method for 21-cm foreground removal,2009,foregrounds,21cm,
 Adrian,Liu,How well can we measure and understand foregrounds with 21 cm experiments?,2018,foregrounds,21cm,interferometry
 Max,Tegmark,How well can we measure and understand foregrounds with 21 cm experiments?,2018,foregrounds,21cm,interferometry
-Angelica,Oliveira-Costa,A model of diffuse Galactic radio emission from 10 MHz to 100 GHz,2008,foregrounds,,
-Max,Tegmark,A model of diffuse Galactic radio emission from 10 MHz to 100 GHz,2008,foregrounds,,
-Bryan,Gaensler,A model of diffuse Galactic radio emission from 10 MHz to 100 GHz,2008,foregrounds,,
-J.D.,Peterson,Interstellar absorption of the galactic polar low-frequency radio background synchrotron spectrum as an indicator of clumpiness in the warm ionized medium,2002,ISM,foregrounds,self_absorption
-W.R.,Webber,Interstellar absorption of the galactic polar low-frequency radio background synchrotron spectrum as an indicator of clumpiness in the warm ionized medium,2002,ISM,foregrounds,self_absorption
-Morgan,Presley,Measuring the cosmological 21cm monopole with an interferometer,2015,21cm,global_signal,interferometry
-Adrian,Liu,Measuring the cosmological 21cm monopole with an interferometer,2015,21cm,global_signal,interferometry
-Aaron,Parsons,Measuring the cosmological 21cm monopole with an interferometer,2015,21cm,global_signal,interferometry
-Grote,Reber,Cosmic radio-frequency radiation near one megacylce,1956,foregrounds,,
-G.R.,Ellis,Cosmic radio-frequency radiation near one megacylce,1956,foregrounds,,
-Max,Tegmark,Foregrounds and forecasts for the cosmic microwave background,2000,CMB,foregrounds,CMB_pol
-Daniel,Eisenstein,Foregrounds and forecasts for the cosmic microwave background,2000,CMB,foregrounds,CMB_pol
-Wayne,Hu,Foregrounds and forecasts for the cosmic microwave background,2000,CMB,foregrounds,CMB_pol
-Angelica,Oliveira-Costa,Foregrounds and forecasts for the cosmic microwave background,2000,CMB,foregrounds,CMB_pol
-Haoxuan,Zheng,An improved model of diffuse galactic radio emission from 10MHz to 5THz,2016,foregrounds,,
-Max,Tegmark,An improved model of diffuse galactic radio emission from 10MHz to 5THz,2016,foregrounds,,
-Joshua,Dillon,An improved model of diffuse galactic radio emission from 10MHz to 5THz,2016,foregrounds,,
-Doyeon,Kim,An improved model of diffuse galactic radio emission from 10MHz to 5THz,2016,foregrounds,,
-Adrian,Liu,An improved model of diffuse galactic radio emission from 10MHz to 5THz,2016,foregrounds,,
+Angelica,Oliveira-Costa,A model of diffuse Galactic radio emission from 10 MHz to 100 GHz,2008,foregrounds,galactic,
+Max,Tegmark,A model of diffuse Galactic radio emission from 10 MHz to 100 GHz,2008,foregrounds,galactic,
+Bryan,Gaensler,A model of diffuse Galactic radio emission from 10 MHz to 100 GHz,2008,foregrounds,galactic,
+J.D.,Peterson,Interstellar absorption of the galactic polar low-frequency radio background synchrotron spectrum as an indicator of clumpiness in the warm ionized medium,2002,foregrounds,ISM,self_absorption
+W.R.,Webber,Interstellar absorption of the galactic polar low-frequency radio background synchrotron spectrum as an indicator of clumpiness in the warm ionized medium,2002,foregrounds,ISM,self_absorption
+Morgan,Presley,Measuring the cosmological 21cm monopole with an interferometer,2015,global_signal,21cm,interferometry
+Adrian,Liu,Measuring the cosmological 21cm monopole with an interferometer,2015,global_signal,21cm,interferometry
+Aaron,Parsons,Measuring the cosmological 21cm monopole with an interferometer,2015,global_signal,21cm,interferometry
+Grote,Reber,Cosmic radio-frequency radiation near one megacylce,1956,foregrounds,galactic,
+G.R.,Ellis,Cosmic radio-frequency radiation near one megacylce,1956,foregrounds,galactic,
+Max,Tegmark,Foregrounds and forecasts for the cosmic microwave background,2000,foregrounds,CMB,CMB_pol
+Daniel,Eisenstein,Foregrounds and forecasts for the cosmic microwave background,2000,foregrounds,CMB,CMB_pol
+Wayne,Hu,Foregrounds and forecasts for the cosmic microwave background,2000,foregrounds,CMB,CMB_pol
+Angelica,Oliveira-Costa,Foregrounds and forecasts for the cosmic microwave background,2000,foregrounds,CMB,CMB_pol
+Haoxuan,Zheng,An improved model of diffuse galactic radio emission from 10MHz to 5THz,2016,foregrounds,galactic,
+Max,Tegmark,An improved model of diffuse galactic radio emission from 10MHz to 5THz,2016,foregrounds,galactic,
+Joshua,Dillon,An improved model of diffuse galactic radio emission from 10MHz to 5THz,2016,foregrounds,galactic,
+Doyeon,Kim,An improved model of diffuse galactic radio emission from 10MHz to 5THz,2016,foregrounds,galactic,
+Adrian,Liu,An improved model of diffuse galactic radio emission from 10MHz to 5THz,2016,foregrounds,galactic,

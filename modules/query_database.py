@@ -6,6 +6,8 @@ from sqlalchemy.sql import asc, desc, func
 from modules.models import Author, Paper 
 from treelib import Tree
 
+import numpy as np
+
 
 def get_authors(session):
     """Get a list of author objects sorted by last name"""
@@ -19,16 +21,17 @@ def get_papers_by_author(author):
 
     Args:
         author: author object as defined in models
-        ascending: direction to sort the results
-
+        
     Returns:
         List: list of papers by that author
     """
 
-    print(f"  Papers by {author.first_name} {author.last_name}:")
+    print(f"\nPapers by {author.first_name} {author.last_name}:\n")
     for paper in author.papers:
-        print("    ",paper.title)
-
+        tags = [paper.tag1s[0].tag1, paper.tag2s[0].tag2, paper.tag3s[0].tag3]
+        tags_formatted = list(filter(None,tags))
+        print(f"{paper.title} ({paper.year})\n",'  [%s]' % ', '.join(map(str, tags_formatted)),"\n")
+        
 
 def tree(authors):
     """

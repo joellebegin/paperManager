@@ -4,7 +4,7 @@ from sqlalchemy import and_, create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.sql import asc, desc, func
 
-from modules.models import Author, Paper 
+from modules.models import Author, Paper, Tag1
 from modules.query_database import tree, get_author_by_lastname, get_papers_by_author, get_authors
 
 # def main():
@@ -18,8 +18,8 @@ Session.configure(bind=engine)
 session = Session()
 
 # Output hierarchical authors data
-authors = get_authors(session)
-tree(authors)
+# authors = get_authors(session)
+# tree(authors)
 
 adrian=get_author_by_lastname(session,"Liu")
 get_papers_by_author(adrian)
