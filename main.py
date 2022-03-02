@@ -22,6 +22,7 @@ session = Session()
 # tree(authors)
 
 adrian=get_author_by_lastname(session,"Liu")
+#print(adrian.first_name, adrian.last_name)
 get_papers_by_author(adrian)
 
 # if __name__ == "__main__":

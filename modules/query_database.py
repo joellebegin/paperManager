@@ -30,8 +30,10 @@ def get_papers_by_author(author):
     for paper in author.papers:
         tags = [paper.tag1s[0].tag1, paper.tag2s[0].tag2, paper.tag3s[0].tag3]
         tags_formatted = list(filter(None,tags))
-        print(f"{paper.title} ({paper.year})\n",'  [%s]' % ', '.join(map(str, tags_formatted)),"\n")
-        
+        author_lastnames = [i.last_name for i in paper.authors]
+        print('%s.' % ', '.join(map(str, author_lastnames)),f"{paper.title} ({paper.year})")
+        print('  [%s]' % ', '.join(map(str, tags_formatted)),"\n")
+        # print(paper.title)
 
 def tree(authors):
     """

@@ -23,18 +23,7 @@ def get_data(filepath):
 def populate_database(session, data):
     # insert the data
     for row in data:
-
-        author = (
-            session.query(Author)
-            .filter(Author.last_name == row["last_name"])
-            .one_or_none()
-        )
-        if author is None:
-            author = Author(
-                first_name=row["first_name"], last_name=row["last_name"]
-            )
-            session.add(author)
-
+        
         paper = (
             session.query(Paper)
             .filter(Paper.title == row["title"])
@@ -43,6 +32,10 @@ def populate_database(session, data):
         if paper is None:
             paper = Paper(title=row["title"], year=row["year"])
             session.add(paper)
+        
+        #=====================================================#
+        #======================== TAGS =======================#
+        #=====================================================#
 
         #========== tag1 ==========#
         tag1 = (
@@ -74,16 +67,33 @@ def populate_database(session, data):
         if tag3 is None:
             tag3 = Tag3(tag3=row["tag3"])
             session.add(tag3)
-
-
-        # add the items to the relationships
-        author.papers.append(paper)
-        paper.authors.append(author)
+        
         paper.tag1s.append(tag1)
         paper.tag2s.append(tag2)
         paper.tag3s.append(tag3)
+        
+        #=====================================================#
+        #======================= AUTHORS =====================#
+        #=====================================================#
+        authors = row["authors"].split(",")
+        for auth in authors:
+            name = list(filter(None,auth.split(" ")))
+            #print(names)
+            
+            author = (
+            session.query(Author)
+            .filter(Author.last_name == name[1])
+            .one_or_none()
+            )
+            if author is None:
+                author = Author(first_name=name[0], last_name=name[1])
+                session.add(author)
 
-        session.commit()
+            author.papers.append(paper)
+            paper.authors.append(author)
+
+            session.commit()
+        
 
     session.close()
 
