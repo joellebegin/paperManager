@@ -3,7 +3,7 @@ from sqlalchemy import and_, create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.sql import asc, desc, func
 
-from modules.models import Author, Paper 
+from modules.models import Author, Paper
 from treelib import Tree
 
 import numpy as np
@@ -28,11 +28,12 @@ def get_papers_by_author(author):
 
     print(f"\nPapers by {author.first_name} {author.last_name}:\n")
     for paper in author.papers:
-        tags = [paper.tag1s[0].tag1, paper.tag2s[0].tag2, paper.tag3s[0].tag3]
-        tags_formatted = list(filter(None,tags))
+        #tags = [paper.tag1s[0].tag1, paper.tag2s[0].tag2, paper.tag3s[0].tag3]
+        #tags_formatted = list(filter(None,tags))
+        tags = [i.tag for i in paper.tags]
         author_lastnames = [i.last_name for i in paper.authors]
         print('%s.' % ', '.join(map(str, author_lastnames)),f"{paper.title} ({paper.year})")
-        print('  [%s]' % ', '.join(map(str, tags_formatted)),"\n")
+        print('  [%s]' % ', '.join(map(str, tags)),"\n")
         # print(paper.title)
 
 def tree(authors):

@@ -1,9 +1,9 @@
-authors,title,year,tag1,tag2,tag3
-"Adrian Liu, Max Tegmark, Judd Bowman, Jacqueline Hewitt, Matias Zaldarriaga",An improved method for 21-cm foreground removal,2009,foregrounds,21cm,
-"Adrian Liu, Max Tegmark",How well can we measure and understand foregrounds with 21 cm experiments?,2018,foregrounds,21cm,interferometry
-"Angelica Oliveira-Costa, Max Tegmak, Bryan Gaensler",A model of diffuse Galactic radio emission from 10 MHz to 100 GHz,2008,foregrounds,galactic,
-"J.D. Peterson, W.R Webber",Interstellar absorption of the galactic polar low-frequency radio background synchrotron spectrum as an indicator of clumpiness in the warm ionized medium,2002,foregrounds,ISM,self_absorption
-"Morgan Presley, Adrian Liu, Aaron Parsons",Measuring the cosmological 21cm monopole with an interferometer,2015,global_signal,21cm,interferometry
-"Grote Reber, G.R. Ellis",Cosmic radio-frequency radiation near one megacylce,1956,foregrounds,galactic,
-"Max Tegmark, Daniel Eisenstein, Wayne Hu, Angelica Oliveira-Costa",Foregrounds and forecasts for the cosmic microwave background,2000,foregrounds,CMB,CMB_pol
-"Haoxuan Zheng, Max Tegmark, Joshua Dillon, Doyeon Kim, Adrian Liu",An improved model of diffuse galactic radio emission from 10MHz to 5THz,2016,foregrounds,galactic,
+authors,title,year,tags
+"Adrian Liu, Max Tegmark, Judd Bowman, Jacqueline Hewitt, Matias Zaldarriaga",An improved method for 21-cm foreground removal,2009,"foregrounds, 21cm"
+"Adrian Liu, Max Tegmark",How well can we measure and understand foregrounds with 21 cm experiments?,2018,"foregrounds, 21cm, interferometry"
+"Angelica Oliveira-Costa, Max Tegmak, Bryan Gaensler",A model of diffuse Galactic radio emission from 10 MHz to 100 GHz,2008,"foregrounds, galactic"
+"J.D. Peterson, W.R Webber",Interstellar absorption of the galactic polar low-frequency radio background synchrotron spectrum as an indicator of clumpiness in the warm ionized medium,2002,"foregrounds, ISM, self_absorbption"
+"Morgan Presley, Adrian Liu, Aaron Parsons",Measuring the cosmological 21cm monopole with an interferometer,2015,"global_signal, 21cm, interferometry"
+"Grote Reber, G.R. Ellis",Cosmic radio-frequency radiation near one megacylce,1956,"foregrounds, galactic"
+"Max Tegmark, Daniel Eisenstein, Wayne Hu, Angelica Oliveira-Costa",Foregrounds and forecasts for the cosmic microwave background,2000,"foregrounds, CMB, CMB_pol"
+"Haoxuan Zheng, Max Tegmark, Joshua Dillon, Doyeon Kim, Adrian Liu",An improved model of diffuse galactic radio emission from 10MHz to 5THz,2016,"foregrounds, galactic"

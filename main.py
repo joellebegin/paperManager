@@ -4,7 +4,7 @@ from sqlalchemy import and_, create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.sql import asc, desc, func
 
-from modules.models import Author, Paper, Tag1
+from modules.models import Author, Paper
 from modules.query_database import tree, get_author_by_lastname, get_papers_by_author, get_authors
 
 # def main():
