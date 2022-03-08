@@ -37,7 +37,11 @@ def populate_database(session, data):
         #======================== TAGS =======================#
         #=====================================================#
         tags = row["tags"].split(",")
-        for tag_word in tags:
+        
+        for t in tags:
+        
+            tag_word = list(filter(None,t.split(" ")))[0]
+            
             tag = (
                 session.query(Tag)
                 .filter(Tag.tag == tag_word)
@@ -46,9 +50,11 @@ def populate_database(session, data):
             if tag is None:
                 tag = Tag(tag=tag_word)
                 session.add(tag)
-
+        
             tag.papers.append(paper)
             paper.tags.append(tag)
+
+            session.commit()
         
         
         #=====================================================#

@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.sql import asc, desc, func
 
 from modules.models import Author, Paper
-from modules.query_database import tree, get_author_by_lastname, get_papers_by_author, get_authors
+from modules.query_database import *
 
 # def main():
 """Main entry point of program"""
@@ -21,9 +21,10 @@ session = Session()
 # authors = get_authors(session)
 # tree(authors)
 
-adrian=get_author_by_lastname(session,"Liu")
-#print(adrian.first_name, adrian.last_name)
-get_papers_by_author(adrian)
-
+# auth=get_author_by_lastname(session,"Tegmark")
+# list_papers_by_author(auth)
+# list_tags(session)
+tag = get_tag(session,"helium")
+list_papers_by_tag(tag)
 # if __name__ == "__main__":
 #     main()
