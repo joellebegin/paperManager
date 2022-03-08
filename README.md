@@ -10,8 +10,8 @@ wishlist:
 ## improve query
 
 - for author query: display tags, other authors [DONE]
-- add query for tags
-- add query to list all tags
+- add query for tags [DONE]
+- add query to list all tags [DONE]
 - add option to open paper. want call to be ```open {FIRST AUTHOR LAST NAME}{YEAR}```
 
 ## make function to add a paper to dbase
@@ -20,12 +20,14 @@ wishlist:
 
 
 ## EVENTUALLY, but this is big: add CLI!
+Click module seems like it would be nice for the very first basic CLI functionality. 
 
+Eventually eventually: interactive??
 - would be super cute to be able to list all papers by some author and it'll look like 
 ``` 
-1. paper 1
-2. paper 2
-3. paper 3 
+[1] paper 1
+[2] paper 2
+[3] paper 3 
 ```
 - and then you just gotta input "2" for example and it'll open the pdf of paper 2. 
 
